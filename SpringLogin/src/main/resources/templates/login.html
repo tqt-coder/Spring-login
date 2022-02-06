@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title th:utext="title"></title>
+<link rel="stylesheet" th:href="@{/css/style.css}"></head>
+	</head>
+	<body>
+	<div th:insert="~{/home:: menu-border}"></div>
+	<form method="POST" th:action="@{/j_spring_security_check}">
+	
+		<label>Username</label>
+		<input type="text" name="username" >
+		<label>Password</label>
+		<input name="password" type="password">
+		<input type="submit" value="Login">
+	</form>
+	</body>
+</html>
