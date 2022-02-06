@@ -5,9 +5,9 @@
  <link rel="stylesheet" th:href="@{/css/style.css}"></head>
 <body>
 	<div th:fragment="menu-border" class="menu-border">
-		<a href="#">Home</a>
-		<a th:href="@{/login}">User</a>
-		<a href="#">Admin</a>
+		<a th:href="@{/login}">Home</a>
+		<a th:href="@{/userInfo}">User</a>
+		<a th:href="@{/admin}">Admin</a>
 	</div>
 	<h2>Message <span th:utext="${message}"></span></h2>
 </body>

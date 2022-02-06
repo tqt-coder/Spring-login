@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+	
+	</head>
+	
+	<body>
+		<div th:replace="~{/home::menu-border}"></div>
+		</br>
+		<h2 th:if="${message} != null" th:utext="${message}"></h2>
+	</body>
+</html>
